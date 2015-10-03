@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Tornado - Local code editor</title>
+    <!-- external plugin required  -->
+    <script src="dependence/json2.min.js"></script>
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link href="dependence/codemirror/lib/codemirror.css" rel="stylesheet" />
+    <script src="dependence/codemirror/lib/codemirror.js"></script>
+    <script src="dependence/codemirror/mode/xml/xml.js"></script>
+    <script src="dependence/codemirror/mode/javascript/javascript.js"></script>
+    <script src="dependence/codemirror/mode/css/css.js"></script>
+    <script src="dependence/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+
+    <!-- tornado required -->
+    <script src="tornado/tornado.js"></script>
+    <link href="tornado/tornado.css" rel="stylesheet" class="icoonies-css" />
+
+    <!-- demo-->
+    <link href="demo/demo.css" rel="stylesheet" />
+    <script src="demo/demo.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!--[if IE]><script src="demo/html5shiv.js"></script><![endif]--> 
+
+</head>
+<body> 
+    <header id="header">
+        <h1>Tornado</h1>
+        <h2>--- Local code editor</h2>
+    </header>
+    <div class="container">
+        <section class="sect-demo">
+            <header>
+                <h1>What is tornado?</h1>
+            </header>
+            <div class="block-txt">
+                <p>Tornado is a source code editor to use in your project web that it gives you a lot of possibilities, as: </p>
+                <ul>
+                    <li>To write code and to show the result inside the editor in a real time;</li>
+                    <li>To manage and edit source code of differents type:
+                            <ul class="inline">
+                                <li><strong>Html</strong>,</li>
+                                <li><strong>Css</strong>,</li>
+                                <li><strong>Javascript</strong>,</li>
+                                <li><strong>External resources</strong>.</li>
+                            </ul>
+
+                    </li>
+                    <li>To show the result to your code in online editor as <strong>JsFiddle</strong> and <strong>Code pen</strong>.</li>
+                    <li>To save and download your result code  in a <strong>html page</strong>.</li>
+                </ul>
+                <p>Tornado is made with responsive layout, adaptable to any device.</p>
+            </div>
+        </section>
+        <section class="sect-demo sect-demo-tornado">
+            <header>
+                <h1>Example</h1>
+
+            </header>
+            <div class="tornado">
+                <textarea class="html">
+                    <section>
+<h1>Tornado</h1>
+<h2>--- Local source editor</h2>
+                    </section>
+                </textarea>
+                <textarea class="css">
+*   {
+margin:0;
+padding:0;
+}
+body  {
+background-color:rgb(0,0,0);
+color:#fff;
+}
+section h1  {
+width:200px;
+min-height:80px;
+font-size:0;
+margin:auto;
+background:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmVsbG9fMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAyMDYuNzY3IDk0LjU3NCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMjA2Ljc2NyA5NC41NzQiDQoJIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9IjMiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgZD0iTTk1Ljg5OCw1MS4yNjgiLz4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xNzIuNzU2LDc1LjEyNGMwLDAtNi42ODYtMTQuOTU1LTAuMTg5LTI1LjI2OGMwLDAsMTIuMDA2LTEyLjYyNSwxMi41NTUtMzEuNDI2DQoJYzAsMC0xMS42Myw5LjIwMS0yNi44OTYsNi40MmMtMTUuMjY3LTIuNzgyLDAuMjIsMC45MiwwLjIyLDAuOTJzMzIuNTM5LTUuNjIzLDI2LjE2MS0xOS4yODljMCwwLTYuNTEtMTEuMjMtMjkuMjItNC4xMjYNCgljMCwwLTM3LjM3LDEwLjY3My0xMS40NTksMjcuODU0YzAsMC05LjE2LDE0LjY0OSw5Ljk1NywxMy45OGMwLDAtNy40NzEsNy4wNCwzLjIyOCwxMS44ODUNCglDMTU3LjExLDU2LjA3NSwxNTcuMjMyLDcwLjQ1NywxNzIuNzU2LDc1LjEyNHoiLz4NCjx0ZXh0IHRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIDEgMC40MDQ4IDcyLjQxMTEpIiBmaWxsPSIjRkZGRkZGIiBmb250LWZhbWlseT0iJ0NvdXJpZXJOZXdQUy1Cb2xkTVQnIiBmb250LXNpemU9IjMxLjE5NjEiPiZsdDt0b3JuYWRvIC8mZ3Q7PC90ZXh0Pg0KPC9zdmc+) no-repeat center top;
+background-size:100%;
+margin-top:80px;
+}
+section h2  {
+color:#fff;
+font-family:'Courier';
+padding-top:20px;
+text-align:center;
+font-size:110%;
+font-weight:normal;
+}
+                </textarea>
+                <textarea class="javascript">
+$(document).ready(function randomColor(){
+var num1 = 1 + Math.floor(Math.random() * 100);
+var num2 = 1 + Math.floor(Math.random() * 100);
+var num3 = 1 + Math.floor(Math.random() * 255);
+$("body").animate({"background-color":"rgb("+num1+","+num2+","+num3+")"}, 5000);
+setTimeout(randomColor, 5000);
+});
+
+                </textarea>
+                <textarea class="resources">
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+                </textarea>
+            </div>
+
+
+        </section>
+        <section class="sect-demo">
+            <header>
+                <h1>How to use</h1>
+            </header>
+            <div class="block-txt">
+                <p>To start with Tornado is very simple, You have to insert this html in your project: </p>
+            </div>
+            <div class="block-code">
+                <textarea class="code">
+<div class="tornado">
+    <textarea class="html">
+        // Your html code  
+    &lt;/textarea>
+    <textarea class="css">
+        // Your css code    
+    &lt;/textarea>            
+    <textarea class="javascript">
+        // Your javascript code   
+    &lt;/textarea>              
+    <textarea class="resources">
+        // The links to resources that insert in your document's tag head
+    &lt;/textarea>    
+</div>         
+                </textarea>
+
+            </div>
+            <p>If you don't need to use one section code, just omit the textarea of that section.</p>
+            <p>In this example the sections javascript and Jsfiddle aren't shown:</p>
+            <div class="block-code">
+                <textarea class="code">
+<div class="tornado" data-jsfiddle="false">
+    <textarea class="html">
+        // Your html code    
+    &lt;/textarea>
+    <textarea class="css">
+        // Your css code    
+    &lt;/textarea>                         
+    <textarea class="resources">
+        // The links to resources that insert in your document's tag head
+    &lt;/textarea> 
+</div>           
+                </textarea>
+            </div>
+       </section>
+         <section class="sect-demo">
+             <header>
+                <h1>Options</h1>
+            </header>
+            <table class="table-option">
+                <colgroup>
+                    <col id="col1" />
+                    <col id="col2" />
+                    <col id="col3" />
+                    <col id="col4" />
+
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Default</th>
+                        <th>Type</th>
+                        <th>Description</th>
+
+                    </tr>
+            </thead>
+                <tbody>
+                    <tr>
+                        <td>data-jsfiddle</td>
+                        <td>True</td>
+                        <td>Boolean</td>
+                        <td>enables or disables the send to Jsfiddle tab that allows you to see the tornado’s code on it.</td>
+                    </tr>
+                    <tr>
+                        <td>data-codpen</td>
+                        <td>True</td>
+                        <td>Boolean</td>
+                        <td>enables or disables the send to Code pen tab that allows you to see the tornado’s code on it.</td>
+                    </tr>
+                    <tr>
+                        <td>data-savehtml</td>
+                        <td>True</td>
+                        <td>Boolean</td>
+                        <td>enables or disables the Save html tab that allows you to download a html file of the tornado’s code. </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <footer id="footer">
+        <span>created by disapp</span>
+    </footer>
+</body>
+</html>

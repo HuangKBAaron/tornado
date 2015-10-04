@@ -26,7 +26,7 @@ The Tornado's code is very simple, You have to insert this html in your project:
         		// Your javascript code   
     		</textarea>              
     		<textarea class="resources">
-        		// The links to resources that insert in your document's tag head
+        		// The resources links to insert in your document's tag head
     		</textarea>    
          </div>
 

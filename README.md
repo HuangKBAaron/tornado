@@ -29,7 +29,8 @@ The Tornado's code is very simple, You have to insert this html in your project:
          </div>
 
 <img src="http://www.icoonies.com/screen-tornado-1.jpg" />
-	
+
+<img src="http://www.icoonies.com/screen-tornado-2.jpg" />
 ## Author
 
 - Mattia Cattabiani

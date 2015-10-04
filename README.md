@@ -13,7 +13,7 @@ Tornado is made with a responsive layout, it's adaptable to any device.
 
 You can check out an example of Tornado [here](http://www.icoonies.website/Icoonies/BackgroundMode).
 
-## How to use
+## how to use
 
 The Tornado's code is very simple, You have to insert this html in your project:
 
@@ -35,7 +35,7 @@ The Tornado's code is very simple, You have to insert this html in your project:
 <img src="http://www.icoonies.com/screen-tornado-1.jpg" />
 
 <img src="http://www.icoonies.com/screen-tornado-2.jpg" />
-## Author
+## author
 
 - Mattia Cattabiani
 - Alessandro Romanini ([@alleromanini](https://twitter.com/alleromanini))

@@ -28,7 +28,7 @@ The Tornado's code is very simple, You have to insert this html in your project:
     		</textarea>    
          </div>
 
-<img src="https://www.dropbox.com/s/ppl7ei79ipr0con/screen-tornado-1.jpg?dl=0" />
+<img src="http://www.e-project.it/Immagini/comuni/logoEprj.png" />
 	
 ## Author
 

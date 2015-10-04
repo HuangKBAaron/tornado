@@ -9,7 +9,7 @@ Tornado is a source code editor that you can include in a web project. It gives 
 
 Tornado is made with a responsive layout, it's adaptable to any device.
 
-You can check out an example of Tornado [here](http://www.icoonies.website/Icoonies/BackgroundMode){:target="_blank"} 
+You can check out an example of Tornado [here](http://www.icoonies.website/Icoonies/BackgroundMode) 
 
 ## How to use
 

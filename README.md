@@ -1,4 +1,6 @@
-# tornado - source code editor
+# tornado
+
+## ---source code editor
 
 Tornado is a source code editor that you can include in a web project. It gives you a lot of possibilities, as:
 

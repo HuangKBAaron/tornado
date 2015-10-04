@@ -5,8 +5,8 @@
 Tornado is a source code editor that you can include in a web project. It gives you a lot of possibilities, as:
 
 - To write code before showing the result inside the editor in a real time;
-- To manage differents types of source code: Html, Css, Javascript, External resources.
-- To show your code in online editor as JsFiddle and Code pen.
+- To manage differents types of source code: Html, Css, Javascript, External resources;
+- To show your code in online editor as JsFiddle and Code pen;
 - To save and download your code in a html page.
 
 Tornado is made with a responsive layout, it's adaptable to any device.

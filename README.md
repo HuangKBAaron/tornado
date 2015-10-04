@@ -40,5 +40,5 @@ The Tornado's code is very simple, You have to insert this html in your project:
 - Mattia Cattabiani
 - Alessandro Romanini ([@alleromanini](https://twitter.com/alleromanini))
 
-## License
+## license
 Tornado is released under the [MIT license](https://github.com/disapp/tornado/blob/master/LICENSE).
